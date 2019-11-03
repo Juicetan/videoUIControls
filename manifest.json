@@ -12,15 +12,12 @@
     }
   ],
   "page_action": {
-    "default_popup": "dist/index.html",
     "default_icon": {
       "128": "images/logoIcon.png"
     }
   },
   "permissions": [
-    "declarativeContent", 
-    "activeTab",
-    "storage",
+    "declarativeContent",
     "https://primevideo.com/"
   ],
   "content_security_policy": "script-src 'self' 'unsafe-eval' https://*.cloudflare.com; object-src 'self'",
