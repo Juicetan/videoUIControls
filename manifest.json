@@ -1,0 +1,28 @@
+{
+  "name": "Video Controls",
+  "version": "1.0.0",
+  "description": "Re-styling of Prime Video playback controls.",
+  "icons": {
+    "128": "images/logoIcon.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://*/*"],
+      "js": ["content.js"]
+    }
+  ],
+  "page_action": {
+    "default_popup": "dist/index.html",
+    "default_icon": {
+      "128": "images/logoIcon.png"
+    }
+  },
+  "permissions": [
+    "declarativeContent", 
+    "activeTab",
+    "storage",
+    "https://primevideo.com/"
+  ],
+  "content_security_policy": "script-src 'self' 'unsafe-eval' https://*.cloudflare.com; object-src 'self'",
+  "manifest_version": 2
+}

@@ -1,0 +1,72 @@
+.cascadesContainer{
+  .webPlayer{
+    .topPanel{
+      .center{
+        .contentTitlePanel{
+          margin-top: 10px;
+          .title{
+            font-weight: bold;
+            font-size: 20px;
+          }
+          .subtitle{
+            font-size: 18px; 
+          }
+        }
+      }
+      .right{
+        .topButtons{
+          position: fixed;
+          top: -25px;
+          right: 0;
+        }
+      }
+    }
+    .overlaysContainer{
+      .hideUntilCssLoaded{
+        .xrayQuickView{
+          position: fixed;
+          top: 10px;
+          left: 20px;
+          .collapsibleXrayHeader{
+            .xrayHeaderTitle{
+              font-size: 18px;
+            }
+          }
+          .widgetGroupView{
+            .collapsibleXrayHeader{
+              margin-top: 0;
+            }
+          }
+        }
+      }
+      .gradientOverlay{
+        background: none;
+      }
+      .bottomPanel{
+        .infoBar{
+          padding-left: 200px;
+        } 
+      }
+      .pausedOverlay{
+        .buttons{
+          position: fixed;
+          bottom: 23px;
+          left: 52px;
+          z-index: 1;
+          .fastSeekBack, .pausedIcon, .playIcon, .fastSeekForward{
+            width: 20px;
+            height: 20px;
+            margin: 0 5px;
+            .svgBackground{
+              max-width: none;
+              width: 45px;
+              height: 45px;
+              top: -12px;
+              left: -5px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
