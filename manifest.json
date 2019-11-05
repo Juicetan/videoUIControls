@@ -1,7 +1,7 @@
 {
   "name": "Video Controls",
-  "version": "1.0.0",
-  "description": "Re-styling of Prime Video playback controls.",
+  "version": "1.0.1",
+  "description": "Re-styling of Prime Video playback controls to be less intrusive.",
   "icons": {
     "128": "images/logoIcon.png"
   },
