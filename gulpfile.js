@@ -1,6 +1,6 @@
 var gulp = require('gulp');
 var del = require('del');
-var sass = require('gulp-sass');
+var sass = require('gulp-dart-sass');
 var prefix = require('gulp-autoprefixer');
 var replace = require('gulp-replace');
 var flatten = require('gulp-flatten');
