@@ -1,24 +1,30 @@
 {
   "name": "Video Controls",
-  "version": "1.1.2",
+  "version": "1.2.0",
   "description": "Re-styling of Prime Video playback controls to be less intrusive.",
   "icons": {
     "128": "images/logoIcon.png"
   },
   "content_scripts": [
     {
-      "matches": ["https://primevideo.com/*","https://www.primevideo.com/*","https://amazon.com/*","https://www.amazon.com/*"],
-      "js": ["dist/content.js"]
+      "matches": [
+        "https://primevideo.com/*",
+        "https://www.primevideo.com/*",
+        "https://amazon.com/*",
+        "https://www.amazon.com/*"
+      ],
+      "js": [
+        "dist/content.js"
+      ]
     }
   ],
-  "page_action": {
+  "action": {
     "default_icon": {
       "128": "images/logoIcon.png"
     }
   },
   "permissions": [
-    "https://primevideo.com/"
+    "activeTab"
   ],
-  "content_security_policy": "script-src 'self' 'unsafe-eval' https://*.cloudflare.com; object-src 'self'",
-  "manifest_version": 2
+  "manifest_version": 3
 }

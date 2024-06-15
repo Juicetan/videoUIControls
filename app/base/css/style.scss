@@ -91,6 +91,7 @@
       position: fixed;
       bottom: 49px;
       left: 10px;
+      z-index: 1;
       .atvwebplayersdk-fastseekback-button,
       .atvwebplayersdk-playpause-button,
       .atvwebplayersdk-fastseekforward-button{
@@ -139,4 +140,24 @@
   .atvwebplayersdk-bottompanel-container{
     padding-left: 200px;
   }
+}
+.atvwebplayersdk-player-container{
+  .hideUntilCssLoaded{
+    .xrayQuickView{
+      .xrayQuickViewList{
+        &.show{
+          position: fixed;
+          top: 51px;
+          bottom: 68%;
+          overflow-y: auto;
+          opacity: 0.2;
+          transition: opacity 0.1s linear, bottom 0.5s ease;
+          &:hover{
+            bottom: 108px;
+            opacity: 1;
+          }
+        }
+      }
+    }
+  }  
 }
